@@ -6,7 +6,7 @@ the scenes). Each card opens to What it does, How it runs, What it looks like, a
 | Copy | URL | Who it's for | Extra |
 |---|---|---|---|
 | GitHub Pages (public, noindex) | https://allinalan.github.io/automations-explorer/ | anyone, no account needed | "I want this" on every card, then Email my list to Alan, Copy my list, Pick a time |
-| Claude artifact (private until shared) | https://claude.ai/artifact/{{set after the first publish, see CLAUDE.md}} | Alan | How it runs names the jobs each agent runs as on the Mac mini |
+| Claude artifact (private until shared) | https://claude.ai/artifact/JGuSv2FFiNKU2i1tUhFwaY | Alan | How it runs names the jobs each agent runs as on the Mac mini |
 
 The public copy keeps a visitor's picks in their own browser only. Email my list opens their mail app; nothing is sent until they press Send.
 
