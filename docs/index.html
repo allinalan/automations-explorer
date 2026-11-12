@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Every agent Alan Hernandez runs across his Cutco sales, the Rising Sun Events Team and Sharp Ninja Academy: what each does, how it runs and what it looks like.">
+<meta property="og:title" content="All In Automation Explorer">
+<meta property="og:description" content="Every agent Alan Hernandez runs across his Cutco sales, the Rising Sun Events Team and Sharp Ninja Academy: what each does, how it runs and what it looks like.">
+<meta property="og:image" content="https://allinalan.github.io/automations-explorer/img/board.jpg">
+<meta property="og:url" content="https://allinalan.github.io/automations-explorer/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2316213A%22%2F%3E%3Cpath%20d%3D%22M14%2044a18%2018%200%200%201%2036%200z%22%20fill%3D%22%23DD6B1A%22%2F%3E%3Crect%20x%3D%2210%22%20y%3D%2246%22%20width%3D%2244%22%20height%3D%224%22%20rx%3D%222%22%20fill%3D%22%23EEF1F6%22%2F%3E%3C%2Fsvg%3E">
+<style>:root{color-scheme:light;box-sizing:border-box}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>All In Automation Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+<style>
+/* Every agent Alan has built, by business. A gallery of tiles; each opens a sheet with four tabs (what it does, how it
+   runs, what it looks like, status). The public copy adds "I want this" picks and a way to send them to Alan; the Claude
+   copy adds what each agent runs as on the Mac mini. Navy + sunrise orange, the All In Automation look, same tokens as
+   the Events Team Agent Explorer. */
+:root {
+  --bg: #F3F4F7; --surface: #FFFFFF; --surface-2: #F7F8FB; --ink: #16213A; --muted: #56627A; --line: #DCE0E8;
+  --sun: #DD6B1A; --sun-ink: #B04F0B; --sun-soft: #FCEDE1; --frame: #1B2335; --scrim: rgba(17, 26, 44, 0.55);
+  --shadow: 0 1px 2px rgba(17, 26, 44, 0.05), 0 10px 30px rgba(17, 26, 44, 0.10);
+  --ok: #1F7139; --ok-bg: #E2F3E7; --wip: #8A5300; --wip-bg: #FBEFD7; --pilot: #5B3FA0; --pilot-bg: #ECE6F8;
+  --navy: #111A2C; --navy-2: #1A2540; --navy-line: #2B3752; --navy-ink: #EEF1F6; --navy-muted: #AAB4C6;
+  --slack: #FFFFFF; --slack-line: #E3E5EA; --bubble-in: #E9EBF0; --bubble-out: #2F7BF6;
+  --f-display: "Big Shoulders Display", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1524; --surface: #162034; --surface-2: #1B2740; --ink: #E8ECF3; --muted: #A1ACBE; --line: #28334B;
+    --sun: #FF9A47; --sun-ink: #FFB173; --sun-soft: #33231A; --frame: #0A0F1A; --scrim: rgba(0, 0, 0, 0.6);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+    --ok: #7DD99D; --ok-bg: #173325; --wip: #F5C46A; --wip-bg: #3A2C12; --pilot: #C3A8F5; --pilot-bg: #2B2347;
+    --navy: #0A101C; --navy-2: #141D30; --navy-line: #26324A; --navy-ink: #EEF1F6; --navy-muted: #A6B1C4;
+    --slack: #1B2740; --slack-line: #28334B; --bubble-in: #2A3550; --bubble-out: #2F7BF6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1524; --surface: #162034; --surface-2: #1B2740; --ink: #E8ECF3; --muted: #A1ACBE; --line: #28334B;
+  --sun: #FF9A47; --sun-ink: #FFB173; --sun-soft: #33231A; --frame: #0A0F1A; --scrim: rgba(0, 0, 0, 0.6);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --ok: #7DD99D; --ok-bg: #173325; --wip: #F5C46A; --wip-bg: #3A2C12; --pilot: #C3A8F5; --pilot-bg: #2B2347;
+  --navy: #0A101C; --navy-2: #141D30; --navy-line: #26324A; --navy-ink: #EEF1F6; --navy-muted: #A6B1C4;
+  --slack: #1B2740; --slack-line: #28334B; --bubble-in: #2A3550; --bubble-out: #2F7BF6;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; -webkit-text-size-adjust: 100%; margin: 0; }
+body.sheet-open { overflow: hidden; }
+a { color: var(--sun-ink); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 6px; }
+[hidden] { display: none !important; }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2 { font-family: var(--f-display); text-transform: uppercase; letter-spacing: 0.005em; line-height: 0.95; text-wrap: balance; margin: 0; font-weight: 800; }
+h3 { margin: 0; font-size: 19px; line-height: 1.25; }
+p { margin: 0; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--sun-ink); }
+.muted { color: var(--muted); }
+button { font: inherit; color: inherit; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 8px 16px; border-radius: 11px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 700; font-size: 15.5px; cursor: pointer; text-decoration: none; }
+.btn:hover { border-color: var(--ink); }
+.btn.primary { background: var(--sun); border-color: var(--sun); color: #FFFFFF; }
+.btn.dark { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.btn.sm { min-height: 34px; padding: 5px 12px; font-size: 14px; border-radius: 9px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; line-height: 1.35; white-space: nowrap; border: 1px solid var(--line); color: var(--muted); }
+.chip.st::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.chip.live { color: var(--ok); background: var(--ok-bg); border-color: transparent; }
+.chip.dev { color: var(--wip); background: var(--wip-bg); border-color: transparent; }
+.chip.pilot { color: var(--pilot); background: var(--pilot-bg); border-color: transparent; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--surface) 92%, transparent); border-bottom: 1px solid var(--line); -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px); padding-top: env(safe-area-inset-top, 0px); }
+.topbar .wrap { display: flex; align-items: center; gap: 14px; min-height: 58px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: var(--f-display); font-weight: 800; text-transform: uppercase; font-size: 21px; letter-spacing: 0.02em; white-space: nowrap; }
+.brand svg { width: 30px; height: 30px; flex: none; }
+.brand b { color: var(--sun); font-weight: 800; }
+.topbar nav { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.topbar nav a.tl { color: var(--muted); text-decoration: none; font-size: 15px; padding: 6px 8px; border-radius: 8px; }
+.topbar nav a.tl:hover { color: var(--ink); background: var(--surface-2); }
+.pickpill .n { display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 999px; background: var(--sun); color: #FFF; font-size: 13px; font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) { .brand span { display: none; } .topbar nav a.tl { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(36px, 7vw, 76px) 8px; }
+.hero h1 { font-size: clamp(46px, 8.4vw, 98px); margin-top: 14px; }
+.hero h1 em { font-style: normal; color: var(--sun); }
+.lede { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); max-width: 64ch; margin-top: 18px; }
+.stats { margin-top: 28px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 14px; background: var(--surface); overflow: hidden; }
+.stats div { padding: 16px 18px; border-left: 1px solid var(--line); min-width: 0; }
+.stats div:first-child { border-left: 0; }
+.stats b { display: block; font-family: var(--f-display); font-size: 44px; line-height: 1; color: var(--sun-ink); font-variant-numeric: tabular-nums; }
+.stats span { font-size: 15px; color: var(--muted); }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .stats div:nth-child(3) { border-left: 0; } .stats div:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+/* Filters */
+.filters { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filters .lbl { font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-right: 4px; }
+.fbtn { min-height: 36px; padding: 5px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-size: 15px; font-weight: 600; }
+.fbtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.filters + .filters { margin-top: 10px; }
+
+/* Business sections + tiles */
+section.biz { padding-block: clamp(40px, 6vw, 70px) 0; scroll-margin-top: 70px; }
+.biz-head { display: flex; flex-wrap: wrap; align-items: end; gap: 6px 18px; justify-content: space-between; }
+.biz-head h2 { font-size: clamp(36px, 5.4vw, 58px); }
+.biz-head p { color: var(--muted); max-width: 52ch; }
+.grid { margin-top: 22px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.tile { position: relative; display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 16px; box-shadow: var(--shadow); min-width: 0; }
+.tile.picked { border-color: var(--sun); box-shadow: 0 0 0 2px color-mix(in srgb, var(--sun) 35%, transparent), var(--shadow); }
+.tile .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tile h3 { font-size: 21px; }
+.tile .alias { display: block; font-size: 14px; font-weight: 600; color: var(--muted); margin-top: 2px; }
+.tile p.job { color: var(--muted); font-size: 16px; flex: 1; }
+.tile .acts { display: flex; gap: 8px; flex-wrap: wrap; }
+.tile .open::after { content: ""; position: absolute; inset: 0; border-radius: 16px; }
+.tile .pick { position: relative; z-index: 1; }
+.pick[aria-pressed="true"] { background: var(--sun-soft); border-color: var(--sun); color: var(--sun-ink); }
+.empty { margin-top: 18px; color: var(--muted); }
+
+/* Rules band */
+.band { margin-top: clamp(56px, 8vw, 96px); background: var(--navy); color: var(--navy-ink); padding-block: clamp(44px, 6vw, 72px); }
+.band .eyebrow { color: #FFB173; }
+.band h2 { font-size: clamp(36px, 5.4vw, 58px); margin-top: 10px; }
+.rules { margin-top: 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.rule { background: var(--navy-2); border: 1px solid var(--navy-line); border-radius: 14px; padding: 18px; }
+.rule b { display: block; font-size: 17.5px; line-height: 1.3; }
+.rule span { display: block; margin-top: 8px; color: var(--navy-muted); font-size: 15.5px; }
+@media (max-width: 900px) { .rules { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .rules { grid-template-columns: minmax(0, 1fr); } }
+
+/* Picks */
+.picks { padding-block: clamp(48px, 7vw, 84px) 0; scroll-margin-top: 70px; }
+.picks h2 { font-size: clamp(36px, 5.4vw, 58px); margin-top: 10px; }
+.pickbox { margin-top: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); display: grid; gap: 16px; }
+.pickbox ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.pickbox li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 8px 6px 12px; border-radius: 999px; background: var(--sun-soft); color: var(--sun-ink); font-weight: 600; font-size: 15px; }
+.pickbox li button { border: 0; background: transparent; cursor: pointer; width: 26px; height: 26px; border-radius: 50%; color: inherit; font-size: 17px; line-height: 1; }
+.pickbox label { font-weight: 700; font-size: 15.5px; }
+.pickbox textarea, .pickbox input { width: 100%; margin-top: 6px; font: inherit; font-size: 16px; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.pickbox textarea { min-height: 90px; resize: vertical; }
+.pickbox .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.pickbox .note { font-size: 14px; color: var(--muted); }
+
+footer { margin-top: clamp(56px, 8vw, 90px); border-top: 1px solid var(--line); padding-block: 26px calc(30px + env(safe-area-inset-bottom, 0px)); color: var(--muted); font-size: 15px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+/* Sheet */
+.scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 40; }
+.sheet { position: fixed; z-index: 41; inset: auto 0 0 0; max-height: min(92vh, 900px); background: var(--surface); border-radius: 20px 20px 0 0; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+@media (min-width: 860px) { .sheet { inset: 5vh auto auto 50%; transform: translateX(-50%); width: min(920px, 94vw); max-height: 90vh; border-radius: 20px; } }
+.sh-head { padding: 20px 20px 0; display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; }
+.sh-head h3 { font-family: var(--f-display); text-transform: uppercase; font-size: clamp(34px, 5vw, 46px); line-height: 0.95; }
+.sh-head .alias { font-size: 15px; font-weight: 600; color: var(--muted); }
+.sh-head p { grid-column: 1 / -1; color: var(--muted); }
+.sh-head .chips { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+.x { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-size: 20px; line-height: 1; }
+.tabs { display: flex; gap: 4px; padding: 14px 20px 0; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+.tabs button { border: 0; background: transparent; padding: 10px 12px; font-weight: 700; font-size: 15.5px; color: var(--muted); border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--sun); }
+.sh-body { padding: 20px; overflow-y: auto; overscroll-behavior: contain; }
+.sh-foot { padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 12px; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
+ol.steps li::before { content: counter(s); display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--bg); font-weight: 700; font-size: 14px; }
+.result { margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: var(--sun-soft); color: var(--ink); }
+.result b { color: var(--sun-ink); }
+dl.how { margin: 0; display: grid; grid-template-columns: minmax(110px, 160px) 1fr; gap: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+dl.how dt, dl.how dd { margin: 0; padding: 12px 14px; border-top: 1px solid var(--line); }
+dl.how dt:first-of-type, dl.how dt:first-of-type + dd { border-top: 0; }
+dl.how dt { font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--surface-2); padding-top: 15px; }
+dl.how ul { margin: 0; padding-left: 18px; }
+@media (max-width: 520px) { dl.how { grid-template-columns: 1fr; } dl.how dd { border-top: 0; padding-top: 2px; } }
+.hood { margin-top: 16px; padding: 12px 14px; border-radius: 12px; border: 1px dashed var(--line); font-size: 14.5px; color: var(--muted); }
+.hood code { font-family: var(--f-mono); font-size: 12.5px; color: var(--ink); }
+.status-lines { display: grid; gap: 14px; }
+.status-lines .big { font-size: 19px; }
+
+/* Mock screens */
+.mock { max-width: 560px; margin: 0 auto; }
+.fake { display: block; text-align: center; margin-top: 10px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.slack { background: var(--slack); border: 1px solid var(--slack-line); border-radius: 12px; overflow: hidden; }
+.slack .chn { padding: 10px 14px; border-bottom: 1px solid var(--slack-line); font-weight: 700; font-size: 15px; }
+.slack .msg { display: grid; grid-template-columns: 36px 1fr; gap: 10px; padding: 12px 14px; }
+.slack .av { width: 36px; height: 36px; border-radius: 8px; background: var(--ink); color: var(--bg); display: grid; place-items: center; font-weight: 800; font-size: 14px; }
+.slack .av.me { background: var(--sun); color: #FFF; }
+.slack .who { font-weight: 800; font-size: 15px; }
+.slack .who span { font-weight: 400; color: var(--muted); font-size: 12.5px; margin-left: 6px; }
+.slack .msg p { font-size: 15.5px; }
+.phone-mock { background: var(--surface-2); border: 1px solid var(--line); border-radius: 26px; padding: 16px 14px 18px; max-width: 380px; margin: 0 auto; }
+.phone-mock .to { text-align: center; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.bub { max-width: 82%; padding: 9px 13px; border-radius: 18px; font-size: 15.5px; line-height: 1.4; margin-top: 6px; width: fit-content; }
+.bub.out { margin-left: auto; background: var(--bubble-out); color: #FFF; border-bottom-right-radius: 6px; }
+.bub.in { background: var(--bubble-in); color: var(--ink); border-bottom-left-radius: 6px; }
+.chat-mock { background: var(--surface-2); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.chat-mock .bub.out { background: var(--sun); }
+.mail { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.mail .subj { padding: 12px 16px; background: var(--surface-2); border-bottom: 1px solid var(--line); font-weight: 700; }
+.mail .lines { padding: 14px 16px; display: grid; gap: 8px; font-size: 15.5px; }
+.board { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.board .bt { padding: 12px 16px; background: var(--ink); color: var(--bg); font-family: var(--f-display); text-transform: uppercase; font-size: 22px; letter-spacing: 0.02em; }
+.board .br { display: flex; justify-content: space-between; gap: 14px; padding: 11px 16px; border-top: 1px solid var(--line); font-size: 15.5px; }
+.board .br:first-of-type { border-top: 0; }
+.board .br span { color: var(--muted); }
+.board .br b { text-align: right; }
+figure.shot { margin: 0 auto; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--frame); }
+figure.shot img { display: block; width: 100%; height: auto; }
+figure.shot.phone { max-width: 300px; border-radius: 28px; border-width: 6px; border-color: var(--frame); }
+.noscreen { padding: 18px; border: 1px dashed var(--line); border-radius: 12px; color: var(--muted); }
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="All In Automation, back to the top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#16213A"/><path d="M14 44a18 18 0 0 1 36 0z" fill="#DD6B1A"/><rect x="10" y="46" width="44" height="4" rx="2" fill="#EEF1F6"/></svg>
+      <span>All In <b>Automation</b></span>
+    </a>
+    <nav aria-label="Businesses" id="topnav"></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="eyebrow">Alan Hernandez · All In Automation</p>
+    <h1>Every agent <em>I've built</em></h1>
+    <p class="lede">These run my Cutco sales, the Rising Sun Events Team and Sharp Ninja Academy, on one computer that never sleeps. Open any agent to see what it does, how it runs and what it looks like. Each one asks me before it sends anything.</p>
+    <div class="stats" id="stats"></div>
+    <div class="filters" role="group" aria-label="Show a business"><span class="lbl">Business</span><span id="f-biz"></span></div>
+    <div class="filters" role="group" aria-label="How it starts"><span class="lbl">Starts</span><span id="f-starts"></span></div>
+  </div>
+
+  <div id="sections"></div>
+  <p class="wrap empty" id="empty" hidden>No agent matches both filters. Pick another one.</p>
+
+  <div class="band">
+    <div class="wrap">
+      <p class="eyebrow">How they're run</p>
+      <h2>They ask before they act</h2>
+      <div class="rules" id="rules"></div>
+    </div>
+  </div>
+
+  <section class="picks wrap" id="picks" data-picks>
+    <p class="eyebrow">Your list</p>
+    <h2>Want some of these?</h2>
+    <p class="muted" style="margin-top:12px;max-width:62ch">Tap "I want this" on any agent. Your list stays in this browser only. When you're ready, send it to me or pick a time to talk it through.</p>
+    <div class="pickbox">
+      <ul id="picklist"></ul>
+      <p class="note" id="picknone">Nothing picked yet.</p>
+      <div><label for="pk-who">Your name and what you run</label><input id="pk-who" autocomplete="off" placeholder="e.g. Cutco rep in Tucson, or events coordinator"></div>
+      <div><label for="pk-why">What would you use them for?</label><textarea id="pk-why" placeholder="The part of your week you'd hand off first"></textarea></div>
+      <div class="row">
+        <a class="btn primary" id="pk-mail" href="#">Email my list to Alan</a>
+        <button class="btn" type="button" id="pk-copy">Copy my list</button>
+        <a class="btn dark" href="https://calendly.com/allincutcoalan/events-team-autopilot-discovery-call" target="_blank" rel="noopener">Pick a time</a>
+      </div>
+      <p class="note">Email opens your own mail app; nothing sends until you press Send. Events team coordinators: the <a href="https://allinalan.github.io/events-team-explorer/">Events Team Agent Explorer</a> lets you set each events agent to your own rules.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Alan Hernandez · All In Automation · Scottsdale</span>
+    <span>Events team agents in depth: <a href="https://allinalan.github.io/events-team-explorer/">the Events Team Agent Explorer</a></span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-name" hidden>
+  <div class="sh-head">
+    <div><h3 id="sh-name"></h3><span class="alias" id="sh-alias"></span></div>
+    <button class="x" type="button" id="sh-x" aria-label="Close">×</button>
+    <div class="chips" id="sh-chips"></div>
+    <p id="sh-job"></p>
+  </div>
+  <div class="tabs" role="tablist" id="sh-tabs">
+    <button role="tab" type="button" data-tab="does" aria-selected="true">What it does</button>
+    <button role="tab" type="button" data-tab="runs" aria-selected="false">How it runs</button>
+    <button role="tab" type="button" data-tab="looks" aria-selected="false">What it looks like</button>
+    <button role="tab" type="button" data-tab="status" aria-selected="false">Status</button>
+  </div>
+  <div class="sh-body" id="sh-body" role="tabpanel"></div>
+  <div class="sh-foot">
+    <span class="muted" id="sh-pos"></span>
+    <span style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn sm pick" type="button" id="sh-pick" data-picks aria-pressed="false">I want this</button>
+      <button class="btn sm" type="button" id="sh-prev">Previous</button>
+      <button class="btn sm dark" type="button" id="sh-next">Next</button>
+    </span>
+  </div>
+</div>
+
+<script>
+const DATA = {"BIZ":[["cutco","Cutco sales","My own sales business: customers, service calls, marketing and the numbers."],["rsd","Rising Sun Events Team","The events team I lead: schedule, stats, picking, charges, pay and freshmen."],["sna","Sharp Ninja Academy","My coaching program: check-ins, onboarding, calls and the mentee inbox."],["infra","Behind the scenes","What keeps every other agent running, honest and easy to change."]],"STATUS":{"live":"Live","pilot":"Pilot","dev":"In development"},"STARTS":{"schedule":"On a schedule","always":"Always on","ask":"When I ask","event":"When something happens"},"RULES":[["Nothing new goes out without a yes","Texts, emails and forms: I see every name and every word first."],["When in doubt, it stops","If a number doesn't tie out or a page won't load, it sends nothing and says why."],["Every agent has its own off switch","Pausing one never touches the others."],["It proves it worked","What it sends or files is read back before it calls the job done."]],"AGENTS":[{"id":"alma","name":"ALMA","alias":"Marketing agent","biz":"cutco","status":"live","starts":"always","job":"My Cutco assistant in Slack and on my phone. She plans my marketing and then does it.","steps":["Keeps a live connection to VectorConnect, my email, my customer list and my calendar.","Each morning, lines up what is next on my marketing plan: the value email, the text send-outs, the service days.","Builds each send-out with exactly who gets it and who is left out, and the words.","Waits for my Accept, sends at the time I picked, and reads every send back.","Answers questions in plain words: a customer, an order, last week's numbers."],"result":"Marketing that actually goes out every month, without me building lists by hand.","when":"Always running. She checks my inbox and plan through the day, and answers the moment I ask.","checks":["VectorConnect (customers, orders, events)","My Gmail inbox","My customer list and calendar","My marketing plan"],"makes":"Email and text send-outs, drafts, order sheets and answers, on my phone and in Slack.","gate":"Nothing goes out without my tap on that exact send. Everything else is read only.","look":{"kind":"chat","who":"ALMA","lines":[["me","Who should get the service text for Saturday?"],["bot","42 past customers within 15 minutes of the route. I left out 6 who were seen in the last 90 days and 2 who asked not to be texted."],["bot","The text and the list are ready in Marketing. Tap Accept to send at 10:00."]]},"jobCount":3},{"id":"service-calls","name":"Service Call Agent","biz":"cutco","status":"live","starts":"ask","job":"Turns a customer's photo of their knives into a filled-out free service order.","steps":["I pick the customer and add the photo they sent.","It names every piece in the photo, and marks the ones it is not sure of.","Fills Cutco's free service form up to the review page.","I check it and tap Submit. It reads the order number back and texts the customer the confirmation."],"result":"A service order in a couple of minutes instead of twenty.","when":"When I start one from ALMA's Service tab or ask her in chat.","checks":["The customer in VectorConnect","The photo","Cutco's service form"],"makes":"A submitted service order, its confirmation and a text to the customer.","gate":"It stops at the review page. Only my Submit sends it.","look":{"kind":"board","title":"Service order, ready for review","rows":[["Customer","Avery (sample)"],["Pieces found","9, 2 marked \"ask\""],["Form","Filled to Review"],["Next","Your Submit"]]},"jobCount":0},{"id":"mockup-studio","name":"Mockup Studio","alias":"Biz Gift Agent","biz":"cutco","status":"pilot","starts":"ask","job":"Makes a logo mockup, a quote and a proposal for a business gift order in one sitting.","steps":["I describe the business and the gift.","It etches their logo onto the knife in a mockup.","Builds the quote and a one-page proposal.","Drafts the email with the proposal attached. It sends on my tap and is read back from Sent.","Keeps the deal: stage, follow-ups, samples and reorders."],"result":"A business owner sees their logo on the product the same day they ask.","when":"When I open the Mockups tab. Other reps are testing it on their own link.","checks":["The business's logo","The product catalog and prices"],"makes":"A mockup, a quote, a proposal and a tracked deal.","gate":"The proposal email goes only on my tap, and is checked in Sent before the deal moves.","look":{"kind":"board","title":"Gift proposal","rows":[["Business","Sample Roofing Co."],["Mockup","Logo etched, 2 angles"],["Quote","Ready"],["Email","Draft, waiting for your tap"]]},"jobCount":0},{"id":"service-texts","name":"Service Text Send-out","biz":"cutco","status":"live","starts":"ask","job":"Fills an open service-call slot by texting past customers who live on that day's route.","steps":["I say a slot opened up.","It reads the customer sheet's color flags and checks my calendar and past texts, so nobody who said no, or who I just saw, gets one.","Ranks who is left by how far off the route they are and what they have bought.","Writes the texts, shows me the list, sends on my go, and checks each one was delivered."],"result":"Open slots fill with people already on my way.","when":"When I tell Claude a slot opened or I need someone booked.","checks":["My customer sheet","My calendar","Past texts with each customer"],"makes":"A ranked list and the texts, sent and checked.","gate":"I see every name and every word before one text goes out.","look":{"kind":"text","who":"Customer (sample)","lines":[["out","Hi Morgan, it's Alan with Cutco. I'm in your area Thursday and have a 4:00 open for a free sharpening. Want it?"],["in","Yes! 4 works."]]},"jobCount":0},{"id":"sales-autopilot","name":"Sales Autopilot","biz":"cutco","status":"live","starts":"schedule","job":"Every Tuesday, pulls my week and updates my command center.","steps":["Exports last week's orders from VectorConnect.","Pulls my calendar for the same week.","Totals the week and checks every number before it is used.","Publishes it to my command center and checks it went live."],"result":"My week on one page every Tuesday morning, without opening VectorConnect.","when":"Tuesdays at 9:00.","checks":["VectorConnect orders","My Google Calendar"],"makes":"The week's stats on my command center page.","gate":"No yes needed: it only reads and publishes my own page. It stops and alerts me if a number looks wrong.","look":{"kind":"board","title":"Week in review","rows":[["Appointments","14"],["Sales","9"],["Closing rate","64%"],["Status","Published, checked live"]]},"jobCount":1},{"id":"event-pl","name":"Event Profit & Loss","biz":"cutco","status":"live","starts":"schedule","job":"Shows which shows I worked actually made money, and asks me about the ones it can't place.","steps":["On the 1st, pulls every event sale and charge from VectorConnect.","Matches sales to events by my own rules.","Posts any event it can't place as a question in Slack, and reads my reply.","Publishes the month's event profit and loss to my command center."],"result":"I know which events to book again before the next season starts.","when":"The 1st of the month, Tuesdays for the events tab, and every few minutes while a question waits on me.","checks":["VectorConnect event sales and charges"],"makes":"A monthly event profit and loss on my command center.","gate":"No yes needed to publish my own numbers. Anything it can't place waits for my answer.","look":{"kind":"slack","ch":"#cutco-reports","bot":"ALMA","msg":["Event question: 3 orders on Oct 12 have no event.","Was that the Sample Home Show or a home appointment?"],"reply":"home show"},"jobCount":3},{"id":"returns-review","name":"Returns Review","biz":"cutco","status":"live","starts":"schedule","job":"Once a month, flags orders that were returned, cancelled or changed.","steps":["Pulls the last four months of orders.","Flags returns, cancellations and changes.","Posts a short report in Slack and updates my command center."],"result":"I catch a return before it surprises me on a pay statement.","when":"The 1st of the month at 10:30.","checks":["VectorConnect orders, last four months"],"makes":"A returns report in Slack and on my command center.","gate":"No yes needed: it only reads and reports.","look":{"kind":"slack","ch":"#cutco-reports","bot":"ALMA","msg":["Returns review for October","2 returned, 1 cancelled, 1 changed. Details in the thread."]},"jobCount":1},{"id":"reply-sorter","name":"Sale Reply Sorter","biz":"cutco","status":"live","starts":"event","job":"Sorts the replies to my sale texts into a sheet, so I can call the hot ones first.","steps":["A customer replies to a sale text.","It files the reply in my sheet and tags it: interested, not now, stop.","I work the sheet from the top."],"result":"No reply gets lost in a busy week.","when":"Each time a reply comes in.","checks":["Replies to my sale texts"],"makes":"A sorted reply sheet.","gate":"No yes needed: it only files replies.","look":{"kind":"board","title":"Sale replies","rows":[["Interested","7"],["Not now","12"],["Stop","2"]]},"jobCount":0},{"name":"Schedule Board","status":"live","job":"One live show schedule your reps, your staff and every agent work from.","steps":["Copies your Show Shift Schedule sheet onto a web app every hour, or the moment someone taps Sync.","Coordinators edit shows, booths and shifts from their phone. Every change is logged with who made it.","Every other agent, and the rep assistant, reads from it."],"result":"One schedule that is always current, instead of copies that drift apart.","checks":["Your Show Shift Schedule sheet","Who on your staff can edit"],"makes":"One schedule that is always current, instead of copies that drift apart.","id":"schedule-board","events":"schedule-board","biz":"rsd","starts":"always","when":"Copies the schedule every hour, or seconds after someone taps Sync. A morning check posts what is due.","gate":"No yes needed: every change is logged with who made it.","look":{"img":"img/board.jpg","w":1200,"h":759,"alt":"The Show Shift Board with shows, shifts and booking status"},"jobCount":2},{"id":"the-block","name":"The Block","alias":"Coordinator portal","biz":"rsd","status":"live","starts":"always","job":"The portal where a coordinator sees every agent, sets its rules and answers what it needs.","steps":["Coordinators and their staff sign in with a code sent to their email.","Today shows what each agent needs from them.","Each agent has its own rules page, drafted from their policy and checked by them.","The roster, reports and team texts live here too."],"result":"One place to run the whole events team.","when":"Always on. Small workers on the mini report each agent's health, export the roster and build the reports people ask for.","checks":["Every agent's status","The roster","Report requests"],"makes":"The coordinator's home page, reports and roster.","gate":"Rules are used only after the coordinator taps \"This is right\".","look":{"kind":"board","title":"Today at the Block","rows":[["Shift Cost","Waiting on your approve"],["Picking Order","Locked for Tuesday"],["Freshmen","3 contracts signed"],["Texts","1 draft"]]},"jobCount":3},{"name":"Rep Assistant","alias":"SUNNY at Rising Sun","status":"live","job":"Answers rep questions day or night, so they stop texting you for every little thing.","steps":["A rep opens a link on their phone and picks their name. No login, no app.","They ask in plain words: a customer on the RoR, their next shift, a show charge, a teammate's number.","It checks your Rep of Record list, the live schedule, your policy doc and your team roster, and answers for that rep's level.","Messages about burnout or quitting are flagged to you. Customer lookups are checked again the next day."],"result":"Reps get answers in seconds, and you stop answering the same ten questions.","checks":["Your Rep of Record list","Your team policy document","Your team roster (kept in your portal)"],"makes":"Reps get answers in seconds, and you stop answering the same ten questions.","id":"rep-assistant","events":"rep-assistant","biz":"rsd","starts":"always","when":"Whenever a rep asks. Every morning it double-checks yesterday's customer answers, and every Monday it reports how accurate they were.","gate":"No yes needed to answer. A wrong answer becomes a fix I approve.","look":{"img":"img/sunny.jpg","w":600,"h":1298,"alt":"The rep assistant on a phone","phone":true},"jobCount":2},{"name":"Season Dashboard","status":"live","job":"The season scoreboard for leaders, plus every rep's own page.","steps":["Pulls Team Sales for the campaign from VectorConnect.","Runs every number through a set of checks and stops if anything looks wrong.","Updates the dashboard: season totals, a leaderboard, each campaign, and each rep's own page with a coaching read.","You give it a final look before it goes live."],"result":"A season dashboard reps and leaders scroll through on their phone.","checks":["Your roster","VectorConnect access"],"makes":"A season dashboard reps and leaders scroll through on their phone.","id":"season-dashboard","events":"season-dashboard","biz":"rsd","starts":"schedule","when":"Wednesdays, and once a month after the campaign's numbers settle.","gate":"It opens the update for a final look before it goes live.","look":{"img":"img/etd.jpg","w":1200,"h":759,"alt":"The season dashboard with totals and a leaderboard"},"jobCount":3},{"name":"Picking Order Agent","status":"live","job":"Ranks every rep for shift picking before each team meeting.","steps":["Pulls your schedule, your stat tracker and event sales from VectorConnect.","Scores each tier on your weights, golf-score style: lowest points picks first.","Publishes the rankings to a team page. Each rep can tap their name to see exactly how their score was built.","Locks the order for the picking meeting, so nobody's spot moves mid-meeting."],"result":"A picking order nobody can argue with, kept current every week.","checks":["Your roster and tiers, kept in your portal (I can suggest the tiers from your policy doc)","Your schedule and stat tracker"],"makes":"A picking order nobody can argue with, kept current every week.","id":"picking-order","events":"picking-order","biz":"rsd","starts":"ask","when":"Before each team meeting, when I say \"run the picking order\".","gate":"I see the order before it is published and locked.","look":{"img":"img/picking-order.jpg","w":1200,"h":864,"alt":"The picking order page"},"jobCount":0},{"name":"Stat Reminder Agent","status":"live","job":"Gets every rep's show stats turned in.","steps":["Finds shows that just wrapped, and confirms each one actually ran.","Checks for every day a rep worked and didn't report.","Texts each rep one message with everything they still owe.","Unreported shifts count as $0 in the rankings, so reps have a reason to answer."],"result":"Stats come in without anyone chasing reps one by one.","checks":["Where stats are reported (VectorConnect or a form)","Your events line"],"makes":"Stats come in without anyone chasing reps one by one.","id":"stat-reminder","events":"stat-reminder","biz":"rsd","starts":"schedule","when":"Wednesday mornings, with a retry in the afternoon.","gate":"I see the list of reps and the words before any text goes out.","look":{"img":"img/stat-audit.jpg","w":1200,"h":864,"alt":"The stat audit page"},"jobCount":2},{"name":"Stat Assistant","alias":"ALMA Stats","status":"pilot","job":"Fills out the stat form with the rep, so they don't dig for numbers.","steps":["Each rep gets their own private link on their phone. The first visit shows them how it works.","It already knows their shows, from your schedule and your shift board, and pulls each day's booth sales from VectorConnect.","The rep only answers what nobody else knows. Every question has a \"What does this mean?\", and a question they type gets a straight answer or goes to you.","If something is off, the rep taps \"Stats are off\" or \"Shifts are off\". A missing sale gets step-by-step help tagging the order to the show in VectorConnect, or the rep adds it by hand for now. A hand-added sale stays out of the picking order until VectorConnect shows it.","It files the stats for them. Each week it tells you where reps got stuck and suggests fixes, and nothing changes until you say yes."],"result":"Stats take a minute instead of ten, they match VectorConnect, and missing sales get tagged to the show.","checks":["Your stat form or tracker","Your schedule"],"makes":"Stats take a minute instead of ten, they match VectorConnect, and missing sales get tagged to the show.","id":"stat-assistant","events":"stat-assistant","biz":"rsd","starts":"ask","when":"When a rep taps \"Do my event stats\".","gate":"The rep checks every day before one Submit.","look":{"img":"img/stats-card.jpg","w":600,"h":1298,"alt":"The stat assistant on a phone","phone":true},"jobCount":0},{"name":"Booking Check Agent","status":"live","job":"Catches shows you've staffed that aren't actually booked.","steps":["Pulls My Events from VectorConnect under your coordinator number.","Lines every show up against the schedule.","Flags shows with reps on them and no booking behind them, and shows whose dates or status changed.","Drafts the list for you and texts for the reps it affects. Sends once you approve."],"result":"No rep shows up to a show that was never booked.","checks":["VectorConnect access","Your schedule"],"makes":"No rep shows up to a show that was never booked.","id":"booking-check","events":"booking-check","biz":"rsd","starts":"schedule","when":"Wednesday mornings.","gate":"Texts to reps go only after my approve.","look":{"kind":"slack","ch":"#rsd-approvals","bot":"RSD Bot","msg":["Booking check: 2 staffed shows have no booking.","Sample Fall Fair (Sat) and Sample Craft Show (Sun). Texts for the 4 reps are ready."],"reply":"approved"},"jobCount":0},{"name":"Booking Request Agent","status":"dev","job":"Submits the booking requests once shifts are picked.","steps":["The week after your meeting, finds every staffed show still waiting on a booking.","Prepares each Booking Request the way you set them, with your Submission Notes and the show's application dates in the comments, plus the email to Cutco Events.","Shows you every request with its comments word for word, and waits for your approve. If the comments are too long for VectorConnect, that request waits for you instead of being cut.","Fills VectorConnect's Booking Request form, checks every field, and submits each one exactly once."],"result":"Every staffed show requested within a week of the meeting, with no forms done by hand.","checks":["VectorConnect access","Your team meeting dates"],"makes":"Every staffed show requested within a week of the meeting, with no forms done by hand.","id":"booking-request","events":"booking-request","biz":"rsd","starts":"schedule","when":"Each morning; it acts on the days after a picking meeting.","gate":"Rep texts wait for my approve.","look":{"kind":"slack","ch":"#rsd-approvals","bot":"RSD Bot","msg":["Booking sweep: 6 shows booked in VectorConnect and read back.","Texts for the reps on them are ready for you."],"reply":"approved"},"jobCount":1},{"name":"Show Research Agent","status":"dev","job":"Double-checks every upcoming show before reps pick shifts, and finds when applications open and close.","steps":["A week before your meeting, looks each show up online to confirm its dates.","Finds when each show's applications open and close, from the show's own page. Last year's date is never passed off as this year's.","Two days before, confirms dates, venue and promoter.","Corrects the schedule and emails you a report. A date you typed in by hand stays, and the report says if research found a different one.","Texts any rep whose show day moved, after your OK."],"result":"Reps pick from a schedule that is actually right, and no application deadline sneaks up on you.","checks":["Your schedule","Your team meeting dates"],"makes":"Reps pick from a schedule that is actually right, and no application deadline sneaks up on you.","id":"show-research","events":"show-research","biz":"rsd","starts":"schedule","when":"Seven days and two days before each meeting.","gate":"Texts about a moved show wait for my OK.","look":{"kind":"email","subj":"Show check before Tuesday's meeting","lines":["14 shows checked online.","1 date moved: Sample Harvest Fest is now Nov 22-23.","Applications close Dec 1 for Sample Spring Expo."]},"jobCount":1},{"name":"Shift Cost Agent","status":"live","job":"Charges each rep their share of the shows they worked.","steps":["Reads who worked what from the schedule and VectorConnect's own counts.","Works out each rep's share of the show cost, plus any overage charges.","Sends you the full list: every rep, every dollar.","After you approve, fills in the Event Charge and Overage Recaps in VectorConnect and reads each one back."],"result":"Show charges entered right every week, without anyone typing a form.","checks":["VectorConnect access","Your show costs on the schedule"],"makes":"Show charges entered right every week, without anyone typing a form.","id":"shift-cost","events":"shift-cost","biz":"rsd","starts":"schedule","when":"Tuesday morning it builds the week's batch; while the batch is open it checks for my answer every 15 minutes.","gate":"It writes to VectorConnect only after my approve, and reads each form back.","look":{"kind":"slack","ch":"#rsd-approvals","bot":"RSD Bot","msg":["Shift costs for last week: 11 reps, 7 shows.","Every rep and every charge is in the thread."],"reply":"approve"},"jobCount":2},{"name":"Coordinator Pay Agent","status":"live","job":"Handles your coordinator pay.","steps":["On bonus week, pulls every rep's event sales for the last full month.","Works out each rep's share at your rate and checks the month ties out.","Sends you the whole list.","After you approve, fills in the Coordinator Compensation form: each rep charged, the coordinator credited."],"result":"Coordinator pay done on time, down to the penny.","checks":["VectorConnect access"],"makes":"Coordinator pay done on time, down to the penny.","id":"coordinator-pay","events":"coordinator-pay","biz":"rsd","starts":"schedule","when":"Twice a day it looks for the bonus window; inside it, it builds the batch.","gate":"It fills the pay form only after my approve.","look":{"kind":"slack","ch":"#rsd-approvals","bot":"RSD Bot","msg":["Coordinator pay for October is ready.","Every rep's share is in the thread, and the month ties out."],"reply":"approve"},"jobCount":2},{"name":"Team Text Agent","status":"live","job":"Sends team announcements and handles the replies.","steps":["You say who: a tier, or everyone highlighted on a sheet.","It shows you the recipient list and the exact words.","Sends them: iMessage, or regular text for Android, during your texting hours.","Reads every reply and drafts answers in your voice for you to OK."],"result":"One message to the whole team in a minute, and no reply slips through.","checks":["Your roster with tiers","Your events line"],"makes":"One message to the whole team in a minute, and no reply slips through.","id":"team-text","events":"team-text","biz":"rsd","starts":"event","when":"When I write a message in The Block, or answer an ask in Slack.","gate":"I tick who gets it and see the words before it sends.","look":{"kind":"text","who":"Rep (sample)","lines":[["out","Team meeting moved to Tuesday 7pm at the office. Reply YES if you're in."],["in","YES"]]},"jobCount":2},{"name":"Meeting Reminder Agent","status":"live","job":"Makes sure everyone shows up to team meetings and leader one-on-ones.","steps":["Watches your calendar for events-team meetings. It reads it, never changes it.","Shows you each meeting with who gets reminded and the exact words.","Once you approve, texts and emails each person ahead of time and again the day of.","If the meeting moves or gets cancelled, nothing goes out."],"result":"Reminders go out on time, every time, and you never have to remember to send them.","checks":["Read-only access to your calendar","Your events line"],"makes":"Reminders go out on time, every time, and you never have to remember to send them.","id":"meeting-reminder","events":"meeting-reminder","biz":"rsd","starts":"schedule","when":"Every morning it reads my calendar three weeks out.","gate":"The 7-day and day-of reminders go after my approve.","look":{"kind":"slack","ch":"#rsd-reminders","bot":"RSD Bot","msg":["Freshmen meeting in 7 days (Tue 7pm).","Reminder text and email for 12 reps are ready."],"reply":"approved"},"jobCount":2},{"name":"Shift Coverage Agent","status":"pilot","job":"Lets a rep hand off a shift, and nothing moves until both reps say yes.","steps":["A rep asks your rep assistant to have someone cover one of their shifts, and picks who.","It checks the request against your schedule board: their shift, a show that's on, and a cover who's free that day.","The asking rep confirms by text, then the cover is asked by text. They can take every day or just some.","Once both say yes, it moves the shift on your board, reads it back, and texts both reps that it's done.","Your first few requests wait for your OK. A request too close to the shift, or one nobody answers, changes nothing."],"result":"Shift swaps stop living in emails and group chats, and nobody finds out at the show that they were covering.","checks":["Your schedule board","Your rep assistant","Your events line"],"makes":"Shift swaps stop living in emails and group chats, and nobody finds out at the show that they were covering.","id":"shift-coverage","events":"shift-coverage","biz":"rsd","starts":"event","when":"When a rep asks to hand off a shift.","gate":"Nothing moves until both reps say yes.","look":{"kind":"text","who":"Rep (sample)","lines":[["in","Can someone take my Saturday shift at the Sample Home Show?"],["out","Riley can take it. Riley, reply YES to take Jordan's Saturday shift."]]},"jobCount":1},{"name":"Event Analyzer","status":"live","job":"Shows which events are actually worth working.","steps":["Pulls event sales for the campaign from VectorConnect's Eventalytics.","Sorts every event into its category. AI only for the few it can't place by rule.","Publishes the analyzer and a report for the coordinators."],"result":"Real numbers on which shows pay off, for planning next season's bookings.","checks":["VectorConnect access"],"makes":"Real numbers on which shows pay off, for planning next season's bookings.","id":"event-analyzer","events":"event-analyzer","biz":"rsd","starts":"schedule","when":"Monthly, from the 8th, after the numbers settle.","gate":"No yes needed: it publishes team totals only.","look":{"img":"img/analyzer.jpg","w":1200,"h":760,"alt":"The Event Analyzer","real":true},"jobCount":1},{"name":"Freshmen Onboarding Agent","status":"live","job":"Takes each new freshmen class from sign-up through training and their first five meetings.","steps":["Picks up every freshman from your sign-up form and puts them on your roster.","At training, adds each one to your VectorConnect events team and sends their events team contract through DocuSign, then texts them it's in their inbox. Corporate's November contract only reaches reps already on your team, so this covers your January and August classes.","Texts each one a welcome with every meeting date, then nudges them only for what they're still missing.","Checks the five things each freshman needs by the meeting you choose: their calendar, your rep assistant, the group chat, your VectorConnect events team, and their contract.","Takes attendance at each meeting with a check-in link and a QR code, at the door or on Zoom.","After each meeting, drafts an update for your DVM and sends it from your own Gmail once you say yes."],"result":"Every freshman gets the same start, you see who needs a hand before they slip, and your DVM hears after every meeting without you writing it.","checks":["Your training month and meeting dates (your portal reminds you when they're due)","Your sign-up form","Whose VectorConnect events team freshmen join","Your DVM, and your group chat if you use one"],"makes":"Every freshman gets the same start, you see who needs a hand before they slip, and your DVM hears after every meeting without you writing it.","id":"freshmen-onboarding","events":"freshmen-onboarding","biz":"rsd","starts":"schedule","when":"Every 15 minutes through the day, following the class's calendar.","gate":"It follows the rules the coordinator approved in The Block.","look":{"kind":"text","who":"Freshman (sample)","lines":[["out","Welcome to the events team, Sam! Your training is Saturday at 10. Here's your contract to sign before then."],["in","Signed!"]]},"jobCount":2},{"name":"Freshmen Training Agent","status":"dev","job":"Trains freshmen on how your division works events, at their own pace.","steps":["Each freshman gets training built around your division.","They work through it at their own pace.","You see where each one is before their first show."],"result":"Freshmen show up to their first show ready, trained your way.","checks":["Your training material, in any form"],"makes":"Freshmen show up to their first show ready, trained your way.","id":"freshmen-training","events":"freshmen-training","biz":"rsd","starts":"ask","when":"At the freshman's own pace.","gate":"In development.","jobCount":0},{"id":"meeting-deck","name":"Meeting Deck Builder","biz":"rsd","status":"live","starts":"ask","job":"Builds the slides and agenda for a Freshmen or JV meeting.","steps":["Starts from my branded meeting template and the season's training deck.","Checks the agenda against current team policy.","Writes a deck that opens cleanly in Google Slides."],"result":"Meeting prep in minutes, and nothing out of date on a slide.","when":"When I say \"build the freshmen meeting deck\".","checks":["My meeting template","The training deck","Team policy"],"makes":"A slide deck and an agenda.","gate":"I review the deck before I present it.","look":{"kind":"board","title":"Freshmen meeting, Tuesday","rows":[["Slides","18"],["Agenda items","6"],["Policy changes found","1"]]},"jobCount":0},{"id":"sna-checkins","name":"Check-in Agent","biz":"sna","status":"live","starts":"schedule","job":"Gets every mentee's weekly check-in in, and tells the coaches who is missing.","steps":["Tuesday morning, texts mentees who have not checked in.","Wednesday morning, a last call to anyone still missing.","Wednesday night, sends the coaches who is still missing.","Every morning, texts mentees about assignments coming due."],"result":"Coaches walk into the week knowing exactly who to follow up with.","when":"Tuesday and Wednesday for check-ins, every morning for due dates.","checks":["The check-in sheet","Each mentee's assignments and due dates"],"makes":"Reminder texts to mentees and a missing list for the coaches.","gate":"If it can't read the contact list it sends nothing and alerts me.","look":{"kind":"text","who":"Mentee (sample)","lines":[["out","Hey Casey, quick one: your weekly check-in is still open. Takes two minutes."],["in","Doing it now!"]]},"jobCount":4},{"id":"sna-onboarding","name":"Onboarding Agent","biz":"sna","status":"live","starts":"schedule","job":"Takes each new mentee from interest form to their own dashboard.","steps":["Texts each new mentee the onboarding form.","Reminds only the ones who haven't filled it out.","Emails each one their program's assignments, once.","Texts their personal dashboard link and adds them to my contacts."],"result":"Every new mentee is set up the same way, with nobody slipping through.","when":"An evening reminder each day, and a dashboard check every hour in the daytime.","checks":["The interest form responses","Who has submitted onboarding"],"makes":"Onboarding texts, the assignments email and the dashboard link.","gate":"The first send to a new group is shown to me first.","look":{"kind":"text","who":"New mentee (sample)","lines":[["out","Welcome to the Dojo, Taylor! Here's your onboarding form. Fill it out before Thursday's call."]]},"jobCount":2},{"id":"sna-callprep","name":"Call Prep Agent","biz":"sna","status":"live","starts":"schedule","job":"Writes the coach a prep note before each mentee's one-on-one.","steps":["Finds the mentee's last recorded calls.","Pulls out their goals, what they promised and where they got stuck.","Puts a short prep note on the coach's hub before the next call."],"result":"Every call starts where the last one ended.","when":"Hourly through the day.","checks":["Call recordings","The mentee roster"],"makes":"A call prep card on the coaching hub.","gate":"No yes needed: the note is private to the coaches.","look":{"kind":"board","title":"Call prep: Jordan","rows":[["Last goal","10 appointments this week"],["Did","7"],["Stuck on","Calling past customers"],["Ask about","The referral script"]]},"jobCount":1},{"id":"sna-groupcall","name":"Group Call Summary","biz":"sna","status":"live","starts":"event","job":"After every group coaching call, sends the coaches a summary card.","steps":["Sees a group call finished on the calendar.","Reads the recording.","Writes summary cards: the lesson, the wins, who needs help.","Emails them to the coaches."],"result":"Coaches who missed the call are caught up in two minutes.","when":"Within 20 minutes of a group call ending.","checks":["The coaching calendar","The call recording"],"makes":"Summary cards by email.","gate":"Goes to the coaches only.","look":{"kind":"email","subj":"Dojo call summary, Monday","lines":["Lesson: handling \"I need to think about it\".","Wins: 3 mentees hit their week.","Needs help: 2, named in the card."]},"jobCount":1},{"id":"sna-inbox","name":"Mentee Inbox","biz":"sna","status":"live","starts":"schedule","job":"Finds the mentee texts waiting on me and drafts my replies.","steps":["Three mornings a week, finds every mentee chat waiting on me.","Summarizes each one from its full history, voice memos included.","Drafts a reply in my voice, with why.","Sends only the replies I approve, from my own number, and proves they went out."],"result":"No mentee waits days for an answer.","when":"Monday, Wednesday and Friday mornings, then every 15 minutes until I answer.","checks":["My mentee group chats and texts"],"makes":"A review in Slack with a drafted reply per chat.","gate":"Only the replies I approve are sent.","look":{"kind":"slack","ch":"#snac-mentee-inbox","bot":"SNAC Bot","msg":["4 mentee chats are waiting on you.","Riley: asked how to restart after a slow week. Draft reply in the thread."],"reply":"send 1, 3"},"jobCount":2},{"id":"sna-sales","name":"Sales Standard Agent","biz":"sna","status":"live","starts":"schedule","job":"After each sales month, flags mentees under their monthly standard.","steps":["Waits for the month to close.","Checks each mentee against their sales standard.","Posts who is under in Slack.","Texts only the ones I approve."],"result":"A struggling mentee hears from us in the first week, not the fourth.","when":"Every 15 minutes through the day, acting once a month.","checks":["Mentee sales"],"makes":"A list in Slack and approved texts.","gate":"Texts only the mentees I approve.","look":{"kind":"slack","ch":"#snac-sales","bot":"SNAC Bot","msg":["October: 3 mentees are under their standard.","Drafted check-in texts are in the thread."],"reply":"approve 1, 2"},"jobCount":1},{"id":"sna-scheduled-texts","name":"Scheduled Texts","biz":"sna","status":"live","starts":"schedule","job":"Sends a one-off text I already approved at the time I picked.","steps":["I approve a text and a time in a Claude session.","It sends that exact text, once, at that time.","A text that misses its window expires instead of going out late."],"result":"I can write tonight and have it land tomorrow at the right moment.","when":"Every 15 minutes through the day.","checks":["The approved text plans"],"makes":"The text, sent once.","gate":"Only texts I approved word for word.","look":{"kind":"text","who":"Mentee (sample)","lines":[["out","Big day today, Avery. Two calls before noon, then text me how it went."]]},"jobCount":1},{"id":"sna-assignments","name":"Assignments Agent","biz":"sna","status":"live","starts":"ask","job":"Posts homework to the coaching hub and every mentee's dashboard from what I describe.","steps":["I describe the assignment in my own words.","It creates it on the hub and on each mentee's dashboard, with the due date.","If I want, it texts the mentees a heads-up."],"result":"Homework is up minutes after the call, without opening a form.","when":"When I say \"post tonight's homework\".","checks":["The coaching hub"],"makes":"Assignments on every dashboard.","gate":"I see the assignment and any text before they go up.","look":{"kind":"board","title":"New assignment","rows":[["Program","Dojo"],["Title","Priority Plan"],["Due","Friday"],["Heads-up text","Ready"]]},"jobCount":0},{"id":"overseer","name":"Overseer","biz":"infra","status":"live","starts":"always","job":"Watches every scheduled agent and fixes what it safely can by itself.","steps":["Every couple of minutes, checks each agent ran, finished and didn't fail.","When one fails, finds out why and posts it in Slack.","For a code bug, writes the fix, tests it and puts it live, then confirms on the next run.","Anything that sends texts or emails waits for my approve."],"result":"A broken agent is usually fixed before I would have noticed.","when":"Always running.","checks":["Every agent's runs and logs","The agents' own alerts"],"makes":"A diagnosis in Slack, and a tested fix.","gate":"Fixes near anything that sends wait for my approve. It never runs an agent itself.","look":{"kind":"slack","ch":"#rsd-alerts","bot":"Overseer","msg":["Stat Reminder failed at 9:00: the stat sheet moved a column.","Fix tested and live. The 1:00 retry ran clean."]},"jobCount":0},{"id":"workroom","name":"Workroom","biz":"infra","status":"live","starts":"always","job":"I build and change agents by typing to Claude in Slack.","steps":["I describe what I want in a business's workroom channel.","Claude works on its own copy of the code and runs the tests.","It shows me what changed.","I type ship, and it goes live and runs once to prove it."],"result":"I change an agent from my phone in the time it takes to describe it.","when":"Always on.","checks":["My Slack workroom channels"],"makes":"Tested changes to my agents.","gate":"Nothing goes live without my ship. It never sends a text, an email or a form.","look":{"kind":"slack","ch":"#rsd-workroom","bot":"RSD Bot","msg":["Done: the meeting reminder now goes 3 days out as well as 7.","Tests pass. Type ship to put it live."],"reply":"ship"},"jobCount":1},{"id":"mini-health","name":"Morning Health Check","biz":"infra","status":"live","starts":"schedule","job":"One message every morning: is everything running?","steps":["Checks every agent is loaded and finished cleanly.","Checks disk space, backups and the remote connection.","Posts one message with a tick per system, and anything that needs me."],"result":"I know the whole system is healthy before my day starts.","when":"Daily at 7:15.","checks":["Every agent","The computer they run on"],"makes":"One health message.","gate":"No yes needed: it only reports.","look":{"kind":"slack","ch":"#alerts","bot":"Mini Health","msg":["All good: every agent ran clean overnight.","Disk 61%. Backup last night. Remote connection up."]},"jobCount":1},{"id":"remote-control","name":"Remote Control","biz":"infra","status":"live","starts":"always","job":"Lets me work with Claude on my automations from anywhere.","steps":["Keeps a Claude Code session open on the computer that runs everything.","I reach it from the Claude app on my phone or laptop.","Every change and command asks me first."],"result":"I can fix something from the road.","when":"Always on.","checks":["My automations folder"],"makes":"A live session I can pick up anywhere.","gate":"Every edit and command asks me first.","look":{"kind":"chat","who":"Claude","lines":[["me","Is the booking sweep running today?"],["bot","Yes. It acts tomorrow, the day after Tuesday's meeting. Nothing is due today."]]},"jobCount":1},{"id":"aia-hq","name":"All In HQ","biz":"infra","status":"live","starts":"schedule","job":"My private view of the automation business: every client, their agents and what AI costs.","steps":["Lists every client from proposal on, with a stage.","Shows their agents, help requests and change requests.","Once a day, totals what AI cost per client and per agent."],"result":"I know which clients need me and what each one costs to run.","when":"Always on; the cost total runs daily at 6:20.","checks":["The Block","AI usage"],"makes":"A private business dashboard.","gate":"No yes needed: private and read only.","look":{"kind":"board","title":"All In HQ","rows":[["Clients","3, one live"],["Open help requests","1"],["AI cost this week","On budget"]]},"jobCount":1},{"id":"support-desk","name":"Support Desk","biz":"infra","status":"dev","starts":"always","job":"The help desk for coordinators who use my agents.","steps":["A coordinator's team posts a problem in their own help channel.","It looks into their setup without changing anything.","Drafts the fix and the reply for me.","I send the reply and approve the fix."],"result":"Coordinators get a real answer fast, and I stay in control.","when":"Every couple of minutes, once switched on.","checks":["The coordinator's help channel","Their setup, read only"],"makes":"A drafted reply and fix.","gate":"Nothing reaches a customer without my send, and nothing changes without my approve.","look":{"kind":"slack","ch":"#aia-help","bot":"Support Desk","msg":["Taylor Reese: the picking order didn't update.","Cause: two reps share a name on the roster. Reply and fix drafted."],"reply":"send"},"jobCount":1},{"id":"learning-lab","name":"Learning Lab","biz":"infra","status":"live","starts":"ask","job":"Turns a video about AI tools into a lesson, and remembers what I already know.","steps":["I drop a YouTube link.","It watches it: the transcript and the actual frames.","Writes a lesson pitched one step past what I already understand.","Files it so every future session builds on it."],"result":"I keep getting better at building agents, without re-learning the basics.","when":"When I say \"learn this\".","checks":["The video","What I already understand"],"makes":"A filed lesson.","gate":"No yes needed: it only writes my notes.","look":{"kind":"board","title":"New lesson","rows":[["Video","Agent skills, 18 min"],["New to you","3 ideas"],["Already known","Skipped"]]},"jobCount":0}]};
+const PICKS = true;          // the public copy: "I want this" and the send-it-to-Alan box
+const HOOD = false;            // the Claude copy: what each agent runs as on the Mac mini
+const MAIL = 'ahernandez@allinknifeguy.com';
+const { BIZ, STATUS, STARTS, AGENTS, RULES } = DATA;
+const $ = (s, el = document) => el.querySelector(s), $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const bizName = Object.fromEntries(BIZ.map(([k, n]) => [k, n]));
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+let picked = new Set(PICKS ? store.get('aie-picks', []) : []);
+let fBiz = 'all', fStarts = 'all', current = null, tab = 'does';
+
+if (!PICKS) $$('[data-picks]').forEach((el) => el.remove());
+
+/* hero numbers, nav, filters, rules */
+const scheduled = AGENTS.reduce((n, a) => n + (a.jobCount || 0), 0);
+$('#stats').innerHTML = [
+  [AGENTS.length, 'agents'],
+  [AGENTS.filter((a) => a.status === 'live').length, 'live today'],
+  [BIZ.length - 1, 'businesses they run'],
+  [scheduled, 'jobs that start themselves'],
+].map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join('');
+$('#topnav').innerHTML = BIZ.map(([k, n]) => `<a class="tl" href="#biz-${k}">${esc(n.replace(' Events Team', ''))}</a>`).join('') +
+  (PICKS ? `<a class="btn sm pickpill" href="#picks">Your list <span class="n" id="pickn">0</span></a>` : '');
+const fb = (group, key, label, on) => `<button type="button" class="fbtn" data-${group}="${key}" aria-pressed="${on}">${esc(label)}</button>`;
+$('#f-biz').innerHTML = fb('biz', 'all', 'All', true) + BIZ.map(([k, n]) => fb('biz', k, n, false)).join(' ');
+$('#f-starts').innerHTML = fb('starts', 'all', 'Any way', true) + Object.entries(STARTS).map(([k, n]) => fb('starts', k, n, false)).join(' ');
+$('#rules').innerHTML = RULES.map(([b, s]) => `<div class="rule"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join('');
+
+/* gallery */
+const chips = (a) => `<span class="chip st ${a.status}">${esc(STATUS[a.status])}</span><span class="chip">${esc(STARTS[a.starts])}</span>`;
+const tile = (a) => `
+  <article class="tile${picked.has(a.id) ? ' picked' : ''}" data-id="${a.id}">
+    <div class="chips">${chips(a)}</div>
+    <h3>${esc(a.name)}${a.alias ? `<span class="alias">${esc(a.alias)}</span>` : ''}</h3>
+    <p class="job">${esc(a.job)}</p>
+    <div class="acts">
+      <button class="btn sm dark open" type="button" data-open="${a.id}" aria-label="Open ${esc(a.name)}">Open</button>
+      ${PICKS ? `<button class="btn sm pick" type="button" data-pick="${a.id}" aria-pressed="${picked.has(a.id)}">I want this</button>` : ''}
+    </div>
+  </article>`;
+function visible() { return AGENTS.filter((a) => (fBiz === 'all' || a.biz === fBiz) && (fStarts === 'all' || a.starts === fStarts)); }
+function renderGallery() {
+  const vis = visible();
+  $('#sections').innerHTML = BIZ.map(([k, n, blurb]) => {
+    const list = vis.filter((a) => a.biz === k);
+    if (!list.length) return '';
+    return `<section class="biz wrap" id="biz-${k}"><div class="biz-head"><h2>${esc(n)}</h2><p>${esc(blurb)}</p></div><div class="grid">${list.map(tile).join('')}</div></section>`;
+  }).join('');
+  $('#empty').hidden = vis.length > 0;
+}
+document.addEventListener('click', (e) => {
+  const f = e.target.closest('[data-biz],[data-starts]');
+  if (f) {
+    const g = f.dataset.biz ? 'biz' : 'starts', v = f.dataset[g];
+    if (g === 'biz') fBiz = v; else fStarts = v;
+    $$(`[data-${g}]`).forEach((b) => b.setAttribute('aria-pressed', b.dataset[g] === v));
+    renderGallery(); return;
+  }
+  const o = e.target.closest('[data-open]'); if (o) { openSheet(o.dataset.open); return; }
+  const p = e.target.closest('[data-pick]'); if (p) { togglePick(p.dataset.pick); return; }
+  const r = e.target.closest('[data-unpick]'); if (r) { togglePick(r.dataset.unpick); return; }
+});
+
+/* picks */
+function togglePick(id) {
+  if (!PICKS) return;
+  picked.has(id) ? picked.delete(id) : picked.add(id);
+  store.set('aie-picks', [...picked]);
+  $$(`[data-pick="${id}"]`).forEach((b) => b.setAttribute('aria-pressed', picked.has(id)));
+  $$(`.tile[data-id="${id}"]`).forEach((t) => t.classList.toggle('picked', picked.has(id)));
+  if (current && current.id === id) $('#sh-pick').setAttribute('aria-pressed', picked.has(id));
+  renderPicks();
+}
+function pickText() {
+  const who = $('#pk-who').value.trim(), why = $('#pk-why').value.trim();
+  const list = AGENTS.filter((a) => picked.has(a.id));
+  return ['Agents I picked on the All In Automation Explorer:', ...list.map((a) => `- ${a.name} (${bizName[a.biz]})`), '',
+    who ? `Who I am: ${who}` : '', why ? `What I'd use them for: ${why}` : ''].filter((l, i, arr) => l || (i && arr[i - 1])).join('\n').trim();
+}
+function renderPicks() {
+  if (!PICKS) return;
+  const list = AGENTS.filter((a) => picked.has(a.id));
+  $('#pickn').textContent = list.length;
+  $('#picklist').innerHTML = list.map((a) => `<li>${esc(a.name)}<button type="button" data-unpick="${a.id}" aria-label="Remove ${esc(a.name)}">×</button></li>`).join('');
+  $('#picknone').hidden = list.length > 0;
+  $('#pk-mail').href = `mailto:${MAIL}?subject=${encodeURIComponent('Agents I picked')}&body=${encodeURIComponent(pickText())}`;
+}
+if (PICKS) {
+  for (const id of ['pk-who', 'pk-why']) { const el = $('#' + id); el.value = store.get('aie-' + id, ''); el.addEventListener('input', () => { store.set('aie-' + id, el.value); renderPicks(); }); }
+  $('#pk-copy').addEventListener('click', async () => {
+    const b = $('#pk-copy');
+    try { await navigator.clipboard.writeText(pickText()); b.textContent = 'Copied'; } catch { b.textContent = 'Copy blocked here'; }
+    setTimeout(() => (b.textContent = 'Copy my list'), 1800);
+  });
+}
+
+/* the sheet */
+let lastFocus = null;
+function openSheet(id) {
+  current = AGENTS.find((a) => a.id === id); if (!current) return;
+  lastFocus = document.activeElement; tab = 'does';
+  $('#sh-name').textContent = current.name;
+  $('#sh-alias').textContent = current.alias || '';
+  $('#sh-chips').innerHTML = chips(current) + `<span class="chip">${esc(bizName[current.biz])}</span>`;
+  $('#sh-job').textContent = current.job;
+  if (PICKS) $('#sh-pick').setAttribute('aria-pressed', picked.has(id));
+  const vis = visible(), i = vis.findIndex((a) => a.id === id);
+  $('#sh-pos').textContent = i > -1 ? `${i + 1} of ${vis.length}` : '';
+  $('#scrim').hidden = $('#sheet').hidden = false; document.body.classList.add('sheet-open');
+  renderTab(); $('#sh-x').focus();
+}
+function closeSheet() { $('#scrim').hidden = $('#sheet').hidden = true; document.body.classList.remove('sheet-open'); current = null; if (lastFocus) lastFocus.focus(); }
+function step(d) { const vis = visible(); if (!current || !vis.length) return; const i = vis.findIndex((a) => a.id === current.id); openSheet(vis[(i + d + vis.length) % vis.length].id); }
+$('#sh-x').onclick = closeSheet; $('#scrim').onclick = closeSheet;
+$('#sh-prev').onclick = () => step(-1); $('#sh-next').onclick = () => step(1);
+if (PICKS) $('#sh-pick').onclick = () => current && togglePick(current.id);
+document.addEventListener('keydown', (e) => { if ($('#sheet').hidden) return; if (e.key === 'Escape') closeSheet(); });
+$('#sh-tabs').addEventListener('click', (e) => { const b = e.target.closest('[data-tab]'); if (b) { tab = b.dataset.tab; renderTab(); } });
+$('#sh-tabs').addEventListener('keydown', (e) => {
+  if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+  const t = $$('[data-tab]', $('#sh-tabs')), i = t.findIndex((b) => b.dataset.tab === tab);
+  tab = t[(i + (e.key === 'ArrowRight' ? 1 : -1) + t.length) % t.length].dataset.tab; renderTab(); $(`[data-tab="${tab}"]`).focus();
+});
+
+function renderTab() {
+  const a = current, el = $('#sh-body');
+  $$('[data-tab]', $('#sh-tabs')).forEach((b) => { b.setAttribute('aria-selected', b.dataset.tab === tab); b.tabIndex = b.dataset.tab === tab ? 0 : -1; });
+  el.scrollTop = 0;
+  if (tab === 'does') {
+    el.innerHTML = `<ol class="steps">${a.steps.map((s) => `<li><span>${esc(s)}</span></li>`).join('')}</ol>` +
+      (a.result ? `<p class="result"><b>What you get:</b> ${esc(a.result)}</p>` : '');
+  } else if (tab === 'runs') {
+    el.innerHTML = `<dl class="how">
+      <dt>Starts</dt><dd>${esc(a.when)}</dd>
+      <dt>Looks at</dt><dd><ul>${a.checks.map((c) => `<li>${esc(c)}</li>`).join('')}</ul></dd>
+      <dt>Makes</dt><dd>${esc(a.makes)}</dd>
+      <dt>Who says yes</dt><dd>${esc(a.gate)}</dd></dl>` +
+      (HOOD ? `<p class="hood">${a.jobs && a.jobs.length ? `Runs on the Mac mini as ${a.jobs.length === 1 ? 'one job' : a.jobs.length + ' jobs'}: ${a.jobs.map((j) => `<code>${esc(j)}</code>`).join(', ')}.` : 'No scheduled job of its own: it runs when someone asks, or inside another agent.'}${a.repo ? ` Code: <code>${esc(a.repo)}</code>.` : ''}</p>` : '');
+  } else if (tab === 'looks') {
+    renderLook(a, el);
+  } else {
+    const lines = { live: 'Running in my business today.', pilot: 'Running with a small group of users while it proves itself.', dev: 'Built or being built, not switched on yet.' };
+    el.innerHTML = `<div class="status-lines"><p class="big"><span class="chip st ${a.status}">${esc(STATUS[a.status])}</span> ${esc(lines[a.status])}</p>
+      <p>${esc(bizName[a.biz])} · ${esc(STARTS[a.starts])}</p>
+      ${a.events ? `<p>This is one of the events team agents coordinators can get for their own division. <a href="https://allinalan.github.io/events-team-explorer/#${esc(a.events)}">Set it to your own rules in the Events Team Agent Explorer</a>.</p>` : ''}</div>`;
+  }
+}
+function renderLook(a, el) {
+  const L = a.look;
+  if (!L) { el.innerHTML = `<div class="noscreen"><b>No screen yet.</b><p>This agent is still being built. Its screen will show here when it is.</p></div>`; return; }
+  const note = `<span class="fake">${L.real ? 'Live page, team totals only' : 'Made-up names and numbers'}</span>`;
+  if (L.img) {
+    // Added with createElement so the page's source carries no image tag built from code (claude.ai's share review).
+    el.innerHTML = `<div class="mock"><figure class="shot${L.phone ? ' phone' : ''}"></figure>${note}</div>`;
+    const i = document.createElement('img'); i.src = L.img; i.width = L.w; i.height = L.h; i.alt = L.alt; i.loading = 'lazy';
+    $('figure', el).appendChild(i); return;
+  }
+  const initials = (n) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+  let html = '';
+  if (L.kind === 'slack') html = `<div class="slack"><div class="chn">${esc(L.ch)}</div>
+      <div class="msg"><div class="av">${esc(initials(L.bot))}</div><div><div class="who">${esc(L.bot)}<span>APP · 9:02</span></div>${L.msg.map((m) => `<p>${esc(m)}</p>`).join('')}</div></div>
+      ${L.reply ? `<div class="msg"><div class="av me">AH</div><div><div class="who">Alan<span>9:14</span></div><p>${esc(L.reply)}</p></div></div>` : ''}</div>`;
+  else if (L.kind === 'text') html = `<div class="phone-mock"><div class="to">${esc(L.who)}</div>${L.lines.map(([d, t]) => `<div class="bub ${d}">${esc(t)}</div>`).join('')}</div>`;
+  else if (L.kind === 'chat') html = `<div class="chat-mock">${L.lines.map(([d, t]) => `<div class="bub ${d === 'me' ? 'out' : 'in'}">${esc(t)}</div>`).join('')}</div>`;
+  else if (L.kind === 'email') html = `<div class="mail"><div class="subj">${esc(L.subj)}</div><div class="lines">${L.lines.map((l) => `<p>${esc(l)}</p>`).join('')}</div></div>`;
+  else if (L.kind === 'board') html = `<div class="board"><div class="bt">${esc(L.title)}</div>${L.rows.map(([k, v]) => `<div class="br"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div>`;
+  el.innerHTML = `<div class="mock">${html}${note}</div>`;
+}
+
+renderGallery(); renderPicks();
+if (location.hash.startsWith('#agent-')) openSheet(location.hash.slice(7));
+</script>
+
+</body>
+</html>

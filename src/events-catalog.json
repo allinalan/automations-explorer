@@ -1,0 +1,459 @@
+{
+ "AREAS": [
+  [
+   "stats",
+   "Stats & rankings"
+  ],
+  [
+   "bookings",
+   "Schedule & bookings"
+  ],
+  [
+   "money",
+   "Charges & pay"
+  ],
+  [
+   "meet",
+   "Meetings & texts"
+  ],
+  [
+   "reports",
+   "Dashboards & reports"
+  ],
+  [
+   "reps",
+   "Rep questions"
+  ],
+  [
+   "freshmen",
+   "Freshmen & training"
+  ]
+ ],
+ "SETS": {
+  "basic": [
+   "Basic",
+   1
+  ],
+  "team": [
+   "Team",
+   2
+  ],
+  "complete": [
+   "Complete",
+   3
+  ],
+  "addon": [
+   "Add-on",
+   0
+  ]
+ },
+ "STATUS": {
+  "live": [
+   "live",
+   "Live at Rising Sun"
+  ],
+  "dev": [
+   "dev",
+   "In development"
+  ],
+  "pilot": [
+   "pilot",
+   "Pilot at Rising Sun"
+  ]
+ },
+ "AGENTS": [
+  {
+   "id": "schedule-board",
+   "name": "Schedule Board",
+   "area": "bookings",
+   "set": "basic",
+   "status": "live",
+   "job": "One live show schedule your reps, your staff and every agent work from.",
+   "steps": [
+    "Copies your Show Shift Schedule sheet onto a web app every hour, or the moment someone taps Sync.",
+    "Coordinators edit shows, booths and shifts from their phone. Every change is logged with who made it.",
+    "Every other agent, and the rep assistant, reads from it."
+   ],
+   "result": "One schedule that is always current, instead of copies that drift apart.",
+   "needs": [
+    "Your Show Shift Schedule sheet",
+    "Who on your staff can edit"
+   ],
+   "uses": [
+    "Your show tiers and access levels",
+    "Your editors"
+   ]
+  },
+  {
+   "id": "rep-assistant",
+   "name": "Rep Assistant",
+   "alias": "SUNNY at Rising Sun",
+   "area": "reps",
+   "set": "basic",
+   "status": "live",
+   "job": "Answers rep questions day or night, so they stop texting you for every little thing.",
+   "steps": [
+    "A rep opens a link on their phone and picks their name. No login, no app.",
+    "They ask in plain words: a customer on the RoR, their next shift, a show charge, a teammate's number.",
+    "It checks your Rep of Record list, the live schedule, your policy doc and your team roster, and answers for that rep's level.",
+    "Messages about burnout or quitting are flagged to you. Customer lookups are checked again the next day."
+   ],
+   "result": "Reps get answers in seconds, and you stop answering the same ten questions.",
+   "needs": [
+    "Your Rep of Record list",
+    "Your team policy document",
+    "Your team roster (kept in your portal)"
+   ]
+  },
+  {
+   "id": "season-dashboard",
+   "name": "Season Dashboard",
+   "area": "reports",
+   "set": "basic",
+   "status": "live",
+   "job": "The season scoreboard for leaders, plus every rep's own page.",
+   "steps": [
+    "Pulls Team Sales for the campaign from VectorConnect.",
+    "Runs every number through a set of checks and stops if anything looks wrong.",
+    "Updates the dashboard: season totals, a leaderboard, each campaign, and each rep's own page with a coaching read.",
+    "You give it a final look before it goes live."
+   ],
+   "result": "A season dashboard reps and leaders scroll through on their phone.",
+   "needs": [
+    "Your roster",
+    "VectorConnect access"
+   ],
+   "setNote": "In the Basic set I update it from your exports. In Team and up it updates itself from VectorConnect."
+  },
+  {
+   "id": "picking-order",
+   "name": "Picking Order Agent",
+   "area": "stats",
+   "set": "team",
+   "status": "live",
+   "job": "Ranks every rep for shift picking before each team meeting.",
+   "steps": [
+    "Pulls your schedule, your stat tracker and event sales from VectorConnect.",
+    "Scores each tier on your weights, golf-score style: lowest points picks first.",
+    "Publishes the rankings to a team page. Each rep can tap their name to see exactly how their score was built.",
+    "Locks the order for the picking meeting, so nobody's spot moves mid-meeting."
+   ],
+   "result": "A picking order nobody can argue with, kept current every week.",
+   "needs": [
+    "Your roster and tiers, kept in your portal (I can suggest the tiers from your policy doc)",
+    "Your schedule and stat tracker"
+   ]
+  },
+  {
+   "id": "booking-check",
+   "name": "Booking Check Agent",
+   "area": "bookings",
+   "set": "team",
+   "status": "live",
+   "job": "Catches shows you've staffed that aren't actually booked.",
+   "steps": [
+    "Pulls My Events from VectorConnect under your coordinator number.",
+    "Lines every show up against the schedule.",
+    "Flags shows with reps on them and no booking behind them, and shows whose dates or status changed.",
+    "Drafts the list for you and texts for the reps it affects. Sends once you approve."
+   ],
+   "result": "No rep shows up to a show that was never booked.",
+   "needs": [
+    "VectorConnect access",
+    "Your schedule"
+   ],
+   "uses": [
+    "Your coordinator name and number",
+    "Your texting hours"
+   ]
+  },
+  {
+   "id": "show-research",
+   "name": "Show Research Agent",
+   "area": "bookings",
+   "set": "team",
+   "status": "dev",
+   "job": "Double-checks every upcoming show before reps pick shifts, and finds when applications open and close.",
+   "steps": [
+    "A week before your meeting, looks each show up online to confirm its dates.",
+    "Finds when each show's applications open and close, from the show's own page. Last year's date is never passed off as this year's.",
+    "Two days before, confirms dates, venue and promoter.",
+    "Corrects the schedule and emails you a report. A date you typed in by hand stays, and the report says if research found a different one.",
+    "Texts any rep whose show day moved, after your OK."
+   ],
+   "result": "Reps pick from a schedule that is actually right, and no application deadline sneaks up on you.",
+   "needs": [
+    "Your schedule",
+    "Your team meeting dates"
+   ]
+  },
+  {
+   "id": "shift-cost",
+   "name": "Shift Cost Agent",
+   "area": "money",
+   "set": "team",
+   "status": "live",
+   "job": "Charges each rep their share of the shows they worked.",
+   "steps": [
+    "Reads who worked what from the schedule and VectorConnect's own counts.",
+    "Works out each rep's share of the show cost, plus any overage charges.",
+    "Sends you the full list: every rep, every dollar.",
+    "After you approve, fills in the Event Charge and Overage Recaps in VectorConnect and reads each one back."
+   ],
+   "result": "Show charges entered right every week, without anyone typing a form.",
+   "needs": [
+    "VectorConnect access",
+    "Your show costs on the schedule"
+   ]
+  },
+  {
+   "id": "coordinator-pay",
+   "name": "Coordinator Pay Agent",
+   "area": "money",
+   "set": "team",
+   "status": "live",
+   "job": "Handles your coordinator pay.",
+   "steps": [
+    "On bonus week, pulls every rep's event sales for the last full month.",
+    "Works out each rep's share at your rate and checks the month ties out.",
+    "Sends you the whole list.",
+    "After you approve, fills in the Coordinator Compensation form: each rep charged, the coordinator credited."
+   ],
+   "result": "Coordinator pay done on time, down to the penny.",
+   "needs": [
+    "VectorConnect access"
+   ]
+  },
+  {
+   "id": "booking-request",
+   "name": "Booking Request Agent",
+   "area": "bookings",
+   "set": "team",
+   "status": "dev",
+   "job": "Submits the booking requests once shifts are picked.",
+   "steps": [
+    "The week after your meeting, finds every staffed show still waiting on a booking.",
+    "Prepares each Booking Request the way you set them, with your Submission Notes and the show's application dates in the comments, plus the email to Cutco Events.",
+    "Shows you every request with its comments word for word, and waits for your approve. If the comments are too long for VectorConnect, that request waits for you instead of being cut.",
+    "Fills VectorConnect's Booking Request form, checks every field, and submits each one exactly once."
+   ],
+   "result": "Every staffed show requested within a week of the meeting, with no forms done by hand.",
+   "needs": [
+    "VectorConnect access",
+    "Your team meeting dates"
+   ]
+  },
+  {
+   "id": "stat-reminder",
+   "name": "Stat Reminder Agent",
+   "area": "stats",
+   "set": "complete",
+   "status": "live",
+   "job": "Gets every rep's show stats turned in.",
+   "steps": [
+    "Finds shows that just wrapped, and confirms each one actually ran.",
+    "Checks for every day a rep worked and didn't report.",
+    "Texts each rep one message with everything they still owe.",
+    "Unreported shifts count as $0 in the rankings, so reps have a reason to answer."
+   ],
+   "result": "Stats come in without anyone chasing reps one by one.",
+   "needs": [
+    "Where stats are reported (VectorConnect or a form)",
+    "Your events line"
+   ]
+  },
+  {
+   "id": "team-text",
+   "name": "Team Text Agent",
+   "area": "meet",
+   "set": "complete",
+   "status": "live",
+   "job": "Sends team announcements and handles the replies.",
+   "steps": [
+    "You say who: a tier, or everyone highlighted on a sheet.",
+    "It shows you the recipient list and the exact words.",
+    "Sends them: iMessage, or regular text for Android, during your texting hours.",
+    "Reads every reply and drafts answers in your voice for you to OK."
+   ],
+   "result": "One message to the whole team in a minute, and no reply slips through.",
+   "needs": [
+    "Your roster with tiers",
+    "Your events line"
+   ]
+  },
+  {
+   "id": "meeting-reminder",
+   "name": "Meeting Reminder Agent",
+   "area": "meet",
+   "set": "addon",
+   "status": "live",
+   "job": "Makes sure everyone shows up to team meetings and leader one-on-ones.",
+   "steps": [
+    "Watches your calendar for events-team meetings. It reads it, never changes it.",
+    "Shows you each meeting with who gets reminded and the exact words.",
+    "Once you approve, texts and emails each person ahead of time and again the day of.",
+    "If the meeting moves or gets cancelled, nothing goes out."
+   ],
+   "result": "Reminders go out on time, every time, and you never have to remember to send them.",
+   "needs": [
+    "Read-only access to your calendar",
+    "Your events line"
+   ]
+  },
+  {
+   "id": "stat-assistant",
+   "name": "Stat Assistant",
+   "alias": "ALMA Stats",
+   "area": "stats",
+   "set": "addon",
+   "status": "pilot",
+   "job": "Fills out the stat form with the rep, so they don't dig for numbers.",
+   "steps": [
+    "Each rep gets their own private link on their phone. The first visit shows them how it works.",
+    "It already knows their shows, from your schedule and your shift board, and pulls each day's booth sales from VectorConnect.",
+    "The rep only answers what nobody else knows. Every question has a \"What does this mean?\", and a question they type gets a straight answer or goes to you.",
+    "If something is off, the rep taps \"Stats are off\" or \"Shifts are off\". A missing sale gets step-by-step help tagging the order to the show in VectorConnect, or the rep adds it by hand for now. A hand-added sale stays out of the picking order until VectorConnect shows it.",
+    "It files the stats for them. Each week it tells you where reps got stuck and suggests fixes, and nothing changes until you say yes."
+   ],
+   "result": "Stats take a minute instead of ten, they match VectorConnect, and missing sales get tagged to the show.",
+   "needs": [
+    "Your stat form or tracker",
+    "Your schedule"
+   ]
+  },
+  {
+   "id": "event-analyzer",
+   "name": "Event Analyzer",
+   "area": "reports",
+   "set": "addon",
+   "status": "live",
+   "job": "Shows which events are actually worth working.",
+   "steps": [
+    "Pulls event sales for the campaign from VectorConnect's Eventalytics.",
+    "Sorts every event into its category. AI only for the few it can't place by rule.",
+    "Publishes the analyzer and a report for the coordinators."
+   ],
+   "result": "Real numbers on which shows pay off, for planning next season's bookings.",
+   "needs": [
+    "VectorConnect access"
+   ]
+  },
+  {
+   "id": "shift-coverage",
+   "name": "Shift Coverage Agent",
+   "area": "bookings",
+   "set": "addon",
+   "status": "pilot",
+   "job": "Lets a rep hand off a shift, and nothing moves until both reps say yes.",
+   "steps": [
+    "A rep asks your rep assistant to have someone cover one of their shifts, and picks who.",
+    "It checks the request against your schedule board: their shift, a show that's on, and a cover who's free that day.",
+    "The asking rep confirms by text, then the cover is asked by text. They can take every day or just some.",
+    "Once both say yes, it moves the shift on your board, reads it back, and texts both reps that it's done.",
+    "Your first few requests wait for your OK. A request too close to the shift, or one nobody answers, changes nothing."
+   ],
+   "result": "Shift swaps stop living in emails and group chats, and nobody finds out at the show that they were covering.",
+   "needs": [
+    "Your schedule board",
+    "Your rep assistant",
+    "Your events line"
+   ],
+   "setNote": "An add-on with Complete, since it texts reps. It runs for Rising Sun's freshmen and JV today."
+  },
+  {
+   "id": "freshmen-onboarding",
+   "name": "Freshmen Onboarding Agent",
+   "area": "freshmen",
+   "set": "addon",
+   "status": "live",
+   "brief": true,
+   "job": "Takes each new freshmen class from sign-up through training and their first five meetings.",
+   "steps": [
+    "Picks up every freshman from your sign-up form and puts them on your roster.",
+    "At training, adds each one to your VectorConnect events team and sends their events team contract through DocuSign, then texts them it's in their inbox. Corporate's November contract only reaches reps already on your team, so this covers your January and August classes.",
+    "Texts each one a welcome with every meeting date, then nudges them only for what they're still missing.",
+    "Checks the five things each freshman needs by the meeting you choose: their calendar, your rep assistant, the group chat, your VectorConnect events team, and their contract.",
+    "Takes attendance at each meeting with a check-in link and a QR code, at the door or on Zoom.",
+    "After each meeting, drafts an update for your DVM and sends it from your own Gmail once you say yes."
+   ],
+   "result": "Every freshman gets the same start, you see who needs a hand before they slip, and your DVM hears after every meeting without you writing it.",
+   "needs": [
+    "Your training month and meeting dates (your portal reminds you when they're due)",
+    "Your sign-up form",
+    "Whose VectorConnect events team freshmen join",
+    "Your DVM, and your group chat if you use one"
+   ],
+   "setNote": "An add-on to any set. It runs for the Rising Sun freshmen class today. In the portal example below, open Roster, then Freshmen, to see the class page."
+  },
+  {
+   "id": "freshmen-training",
+   "name": "Freshmen Training Agent",
+   "area": "freshmen",
+   "set": "addon",
+   "status": "dev",
+   "brief": true,
+   "job": "Trains freshmen on how your division works events, at their own pace.",
+   "steps": [
+    "Each freshman gets training built around your division.",
+    "They work through it at their own pace.",
+    "You see where each one is before their first show."
+   ],
+   "result": "Freshmen show up to their first show ready, trained your way.",
+   "needs": [
+    "Your training material, in any form"
+   ],
+   "setNote": "An add-on to any set. Built around your division's own training, and separate from Freshmen Onboarding."
+  }
+ ],
+ "OWN_QS": [
+  {
+   "k": "when",
+   "word": "When",
+   "ask": "What starts it?",
+   "ph": "Like: every Monday at 9am",
+   "ex": [
+    "Every week",
+    "After every show",
+    "Before a team meeting",
+    "When a rep signs up"
+   ],
+   "max": 140
+  },
+  {
+   "k": "checks",
+   "word": "Checks",
+   "ask": "Where does it look?",
+   "ph": "Like: the shift schedule",
+   "ex": [
+    "VectorConnect",
+    "The shift schedule",
+    "The stat tracker",
+    "My calendar",
+    "Reps' texts"
+   ],
+   "max": 140
+  },
+  {
+   "k": "does",
+   "word": "Does",
+   "ask": "What's the job?",
+   "ph": "Like: finds reps who haven't confirmed their shift and asks them to",
+   "ex": [],
+   "max": 400,
+   "long": true
+  },
+  {
+   "k": "tells",
+   "word": "Tells",
+   "ask": "Who hears about it, and how?",
+   "ph": "Like: texts me the list",
+   "ex": [
+    "Me, by text",
+    "The reps, by text",
+    "My leaders",
+    "Me first, for a yes"
+   ],
+   "max": 140
+  }
+ ]
+}
