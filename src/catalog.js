@@ -373,7 +373,7 @@ var AGENTS = [
     makes: 'A live floor of every agent, and a Workroom job for each rule I give.',
     gate: 'It never sends or ships anything. A rule goes live only on my ship in Slack.',
     look: { kind: 'board', title: 'The floor right now', rows: [['Waiting on you', '1'], ['Broken', '1'], ['Working', '3'], ['Healthy', '40']] },
-    jobs: ['com.allinalan.workforce', 'com.allinalan.workforce-brief'] },
+    jobs: ['com.allinalan.workforce', 'com.allinalan.workforce-brief', 'com.allinalan.workforce-block'] },
   { id: 'cfo', name: 'CFO', biz: 'infra', status: 'live', starts: 'schedule',
     job: 'Counts what each of my businesses spends and takes in, and the total.',
     steps: ['Totals each business\'s month so far: its AI, from its own account, plus the fixed bills I list.', 'Adds what came in, where there is a record: the coaching ledger and card payments.', 'Tells me in Slack when an AI day runs away or a budget runs low, and closes each month.', 'Shows a question mark, never a guess, for anything it can\'t read.', 'Puts the coaching program\'s AI on its own ledger each month, and drafts the events team\'s AI invoice for my send.'],
